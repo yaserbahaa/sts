@@ -1,0 +1,155 @@
+.contant-1-Parent{
+    display: flex;
+    background: black;
+    width: 100%;
+    height: 895.32px;
+    border-radius: 152px;
+}
+.contant-1-txt{
+    font-size: 88px;
+    /* padding-top: 173px; */
+    color: #5adb5a;
+    font-family: fantasy;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutus-parent{
+    display: flex;
+    background: palegoldenrod;
+    width: 100%;
+    height: 895.32px;
+    border-top-right-radius: 4.75rem;
+    border-top-left-radius: 4.75rem;
+
+}
+
+
+.slider-parent{
+    display: flex;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    height: 316px;
+    border-top-right-radius: 3.75rem;
+    border-top-left-radius: 3.75rem;
+}
+
+.slider-txt{
+    display: flex;
+    position: relative;
+    font-size: 8.375rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: goldenrod;
+    -webkit-text-stroke-width: 0.1px;
+    font-family: fantasy;
+    white-space: nowrap;
+    padding: 0 2.66rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.slider-divider-dot {
+    background: palegoldenrod;
+    position: absolute;
+    right: -17px;
+    top: 44%;
+    border-radius: 50%;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.slider-txt2{
+    display: flex;
+    position: relative;
+    font-size: 8.375rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #5adb5a;
+    -webkit-text-stroke-width: 0.1px;
+    font-family: fantasy;
+    white-space: nowrap;
+    padding: 0 2.66rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.slider-divider-dot2{
+    background: #ffee90;
+    position: absolute;
+    right: -17px;
+    top: 44%;
+    border-radius: 50%;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+.aboutus-txt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    margin-left: 175px;
+    letter-spacing: -.0475rem;
+    color: black;
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 63px;
+    font-family: Manrope, sans-serif;
+}
+
+.aboutus-wc{
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    color: goldenrod;
+    -webkit-animation: colorchange3 5s infinite alternate;
+}
+@-webkit-keyframes colorchange3 {
+    0% {
+      
+      color: black;
+    }
+    
+    
+    100% {
+    
+        color: darkgoldenrod;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  

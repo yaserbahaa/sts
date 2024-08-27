@@ -1,0 +1,22 @@
+html{
+  /* background: radial-gradient(circle at 297% 303%, gold, #000); */
+  /* background-color: black; */
+}
+body{
+  /* background-color: black; */
+  background: radial-gradient(circle at 50% 50%, silver -449%, black);
+  /* background:radial-gradient(circle at 49% 50%, #daa520 -241%, black);
+  background:linear-gradient(to right, black, black, black, black,black,black,black,black, goldenrod 69%,black,black, black, black);
+  background:radial-gradient(circle at 70% 25%, goldenrod -500%, black) */
+}
+.robot{
+  transform: scalex(-1);
+  width: 1101px;
+  position: absolute;
+  right: -108px;
+}
+/* *{
+    font-family: 'PT Sans', sans-serif;
+} */
+
+
