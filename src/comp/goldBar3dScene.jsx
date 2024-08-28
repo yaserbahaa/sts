@@ -56,15 +56,15 @@ export default function Model() {
     gsap.to(boxRef2.current, {
       scrollTrigger: {
     trigger: boxRef2.current,
-    start: "bottom 93%", // Trigger animation when top of the box is 80% from the top of the viewport
-    end: "bottom 20%", // End the animation when top of the box is 30% from the top of the viewport
+    start: "bottom 90%", // Trigger animation when top of the box is 80% from the top of the viewport
+    end: "top -330%", // End the animation when top of the box is 30% from the top of the viewport
     scrub: 1, // Smooth scrubbing, takes 1 second to "catch up" to the scrollbar
     // markers:true// Show start and end markers (for debugging)
 },
-  y: 1300, // Animate the box 300px to the right
+  y: 3300, // Animate the box 300px to the right
   x:115,
   ease: 'none',
-  // Rotate the box 360 degrees
+  // rotate:360,
   // rotateY:360,
   duration: 2,
   
@@ -75,7 +75,7 @@ export default function Model() {
   <div ref={boxRef2}  style={{position:"absolute",zIndex:"10", right:"233px",top:"0px",width:"40%",height:"966px" ,overflow:"visible"}}>
     <Canvas >
       <Suspense fallback={null}>
-      <primitive object={scene} scale={[100,100,100]} position={[1, -265, 1]}  rotation={[0, 5.2, 0]}/>
+      <primitive object={scene} scale={[100,100,100]} position={[1, -265, 1]}  rotation={[0, 5.399, 0]}/>
       {/* <primitive object={scene} scale={[100,100,100]} position={[1, -250, 1]}  rotation={[0, 5, 0.45]}/> */}
       </Suspense>
       <Controls/>

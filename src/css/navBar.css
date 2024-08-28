@@ -38,6 +38,7 @@
     color: palegoldenrod;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-weight: bold;
   }
   
   .nav-links:hover {
@@ -54,6 +55,8 @@
     color: goldenrod;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-weight: bold;
+
   }
   
   .nav-links-s:hover {
