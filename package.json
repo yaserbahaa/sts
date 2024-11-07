@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^9.109.2",
-    "@react-three/fiber": "^8.16.8",
+    "@react-three/drei": "^9.111.4",
+    "@react-three/fiber": "^8.17.6",
     "@studio-freight/lenis": "^1.0.42",
     "axios": "^1.7.2",
     "gsap": "^3.12.5",

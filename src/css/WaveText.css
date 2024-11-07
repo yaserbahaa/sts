@@ -1,0 +1,17 @@
+.wave-text {
+    display: inline-block;
+    font-weight: 100;
+    cursor: pointer;
+    color: var(--swatch--green-light);
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-size: 4.375rem;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  
+  .wave-text span {
+    display: inline-block;
+    transform-origin: bottom center;
+    font-family: fantasy;
+  }

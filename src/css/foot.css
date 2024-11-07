@@ -1,0 +1,83 @@
+.footContienr{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    color: black;
+    border-top-right-radius: 4.75rem;
+    border-top-left-radius: 4.75rem;
+}
+
+.footPart1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 47%;
+    margin-left: 3%;
+    height: 100%;
+}
+.footPart1T1{
+    margin-top: 81px;
+    margin-bottom: 24px;
+    font-size: 1.425rem;
+    font-weight: 600;
+}
+.footPart1T2{
+    padding: 0;
+    font-size: 3.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footPart1T3{
+    position: absolute;
+    bottom: 52px;
+    font-size: 1.95rem;
+    font-weight: 800;
+    color: goldenrod;
+}
+.footPart2{
+    display: flex;
+    width: 46%;
+    margin-left: 4%;
+    height: 100%;
+    justify-content: center;
+}
+
+.footPart2TxtCon1{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 81px;
+    position: relative;
+}
+.footPart2TxtCon3{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 81px;
+}
+
+.footPart2Txt{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.footPart2Cr{
+    position: absolute;
+    bottom: 52px;
+    left: 0px;
+    color: gray;
+    font-size: 20px;
+}
+
+.footEnd{
+    position: absolute;
+    width: 100%;
+    height: 225px;
+    background: white;
+    bottom: -203px;
+}

@@ -1,15 +1,17 @@
 .navbar {
   position: relative;
-  height: 138px;
+  height: 198px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  margin-bottom: 48px;
 }
   
   .navbar-logo {
     position: absolute;
-    left: 100px;
+    left: 140px;
+    top: 25px;
     color: #fff;
     cursor: default;
     text-decoration: none;
@@ -21,6 +23,7 @@
   }
   
   .nav-menu {
+    
     display: flex;
     grid-gap: 24px;
     list-style: none;
@@ -52,7 +55,7 @@
     transition: all 0.2s ease-out;
   }
   .nav-links-s {
-    color: goldenrod;
+    color: palegoldenrod;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-weight: bold;

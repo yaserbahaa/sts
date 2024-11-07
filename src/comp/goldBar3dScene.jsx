@@ -1,11 +1,14 @@
 import '../css/goldBar3dScene.css'
-import React, { Suspense,useRef,useEffect } from 'react';
+import "../css/workIntro.css"
+import React, { Suspense,useRef,useEffect, useState } from 'react';
 import { Canvas ,useFrame,useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useTexture,PerspectiveCamera  } from '@react-three/drei';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Loading from './loading';
 
 
+useGLTF.preload('/stsGoldBar.glb');
 
 
 const CameraSetup = () => {
@@ -33,55 +36,61 @@ const Controls = () => {
       controls.current.enablePan = false;
 
       // Allow full horizontal rotation
-      // controls.current.minAzimuthAngle = -Infinity;
-      // controls.current.maxAzimuthAngle = Infinity;
-      // controls.current.autoRotateSpeed  = 0.1
-      controls.current.rotateSpeed  = 0.5
-
-
+      controls.current.minAzimuthAngle = -Infinity;
+      controls.current.maxAzimuthAngle = Infinity;
+      // controls.current.autoRotateSpeed  = 0.05
+      // controls.current.rotateSpeed  = 0.5
+      
+      
       controls.current.update();
     }
   }, [controls]);
-  return <OrbitControls ref={controls} />;
+  return <OrbitControls   ref={controls} />;
 
 }
-
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Model() {
-  const { scene } = useGLTF('/test3.glb');
-  const boxRef2 = useRef(null);
 
+export default function Model() {
+  const { scene } = useGLTF('/stsGoldBar.glb',true);
+  const boxRef1 = useRef(null);
+  
   useEffect(()=>{
-    gsap.to(boxRef2.current, {
+
+    gsap.to(boxRef1.current, {
       scrollTrigger: {
-    trigger: boxRef2.current,
-    start: "bottom 90%", // Trigger animation when top of the box is 80% from the top of the viewport
-    end: "top -330%", // End the animation when top of the box is 30% from the top of the viewport
+        trigger: boxRef1.current,
+    // endTrigger:".test",
+    // toggleActions:"restart ",
+    start: "70% 50%", // Trigger animation when top of the box is 80% from the top of the viewport
+    end: "3100px 85%", // End the animation when top of the box is 30% from the top of the viewport
     scrub: 1, // Smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    // markers:true// Show start and end markers (for debugging)
+    markers:true// Show start and end markers (for debugging)
 },
-  y: 3300, // Animate the box 300px to the right
-  x:115,
+// y: "3400px", // Animate the box 300px to the right
+  y: "2300px", // Animate the box 300px to the right
+  x:130,
   ease: 'none',
-  // rotate:360,
-  // rotateY:360,
-  duration: 2,
-  
+  // duration: 2,
 });
-  },[])
-  
-  return (<>
-  <div ref={boxRef2}  style={{position:"absolute",zIndex:"10", right:"233px",top:"0px",width:"40%",height:"966px" ,overflow:"visible"}}>
+
+
+},[])
+
+return (<>
+
+  <div ref={boxRef1} style={{ position:"absolute",top:"140px",right:"233px",width:"40%",height:"966px" ,overflow:"visible",zIndex:"10"}}>
     <Canvas >
-      <Suspense fallback={null}>
+    <Suspense fallback={<div style={{color:"red"}}>Loading...</div>}>
       <primitive object={scene} scale={[100,100,100]} position={[1, -265, 1]}  rotation={[0, 5.399, 0]}/>
-      {/* <primitive object={scene} scale={[100,100,100]} position={[1, -250, 1]}  rotation={[0, 5, 0.45]}/> */}
       </Suspense>
       <Controls/>
       <CameraSetup/>
     </Canvas>
   </div>
+
   </>
   );
 }
+
+

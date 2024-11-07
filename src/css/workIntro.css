@@ -1,7 +1,8 @@
 .workIntro-parent{
+    position: relative;
     background: lightgoldenrodyellow;
     width: 100%;
-    height: 1046px;
+    height: 1102.32px;
     border-top-right-radius: 4.75rem;
     border-top-left-radius: 4.75rem;
 }
@@ -30,7 +31,7 @@
 .workIntro-txt-sayhi{
     position: absolute;
     left: 3%;
-    bottom: 62px;
+    bottom: 96px;
     font-size: 1.125rem;
     font-weight: 600;
     font-family: Manrope, sans-serif;
@@ -46,6 +47,16 @@
 }
 .workIntro-txt-lc{
     position: absolute;
-    right: 3%;
+    left: 30%;
     bottom: 0px;
+}
+
+
+.fillgap-workIntro{
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+    height: 400px;
+    background: lightgoldenrodyellow;
+    z-index: -1;
 }

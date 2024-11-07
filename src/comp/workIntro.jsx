@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../css/home.css"
+import WaveText from "./waveText";
+import WaveText2 from "./waveText2";
 
 
 
@@ -54,9 +56,15 @@ export default function WorkIntro(){
         <div className="workIntro-txt-parent">
             <p className="workIntro-txt"><span style={{color:"darkgoldenrod"}}>Master gold currency trading with AI!</span> Enroll in expert courses now to start using our <span style={{color:"darkgoldenrod"}}>automated trading programs</span> and boost your <span style={{color:"darkgoldenrod"}}>financial future!</span></p>
             <h6 className="workIntro-txt-sayhi">say hi</h6>
-            <h2 className="workIntro-txt-mail">sts@gold.com</h2>
-            <h1 className="workIntro-txt-lc">Let’s collaborate</h1>
+            <div className="workIntro-txt-mail">
+            <WaveText2/>
+            </div>
+            <div className="workIntro-txt-lc">
+            <WaveText/>
+                
+            </div>
         </div>
+        <span className="fillgap-workIntro"></span>
     </div>
     </>)
 }

@@ -1,20 +1,20 @@
 
 .wcParent{
-    display: flex;
-    justify-content: center;
-    width: 675px;
-    height: 699px;
-    margin-bottom: 330px;
-    margin-left: 252px;
-    color: white;
-    padding-top: 132px;
+  display: flex;
+  justify-content: center;
+  width: 675px;
+  height: 699px;
+  margin-bottom: 430px;
+  margin-left: 252px;
+  color: white;
+  padding-top: 132px;
 }
 .wcTxt{
     font-size: 102px;
     color: #585858;
     line-height: 133px;
     font-family: fantasy;
-    -webkit-animation:colorchange2 5s infinite alternate;
+    -webkit-animation:colorchange2 2s infinite alternate;
 }
 @-webkit-keyframes colorchange2 {
     0% {

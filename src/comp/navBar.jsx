@@ -4,6 +4,7 @@ import '../css/navBar.css';
 import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
 import wsp from "../assets/icons8-whatsapp-50.png"
+import sts from "../assets/sts.JPG"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -55,18 +56,13 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img style={{cursor:"pointer"}} src={wsp} alt="" />
+          <img style={{cursor:"pointer",width:"177px"}} src={sts} alt="" />
           <i class='fab fa-firstdraft' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          {/* <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li> */}
           <li className='nav-item'>
             <Link
               to='https://sts.gold/?p=490'

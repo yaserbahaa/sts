@@ -8,8 +8,9 @@ import robot from './assets/image (1).png'
 import chartGraph from './assets/stsgoldchartgraph(3).mp4'
 
 
+
 function App() {
-const navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
     <>

@@ -4,15 +4,17 @@ import WcText from "./wcText";
 import ShowCase from "./showCase";
 import "../css/home.css"
 import Lenis from "@studio-freight/lenis";
-import { useEffect ,useRef } from "react";
+import { lazy, Suspense, useEffect ,useRef } from "react";
 import AboutUs from "./aboutUs";
 import WorkIntro from "./workIntro";
 import Work from "./Work";
 import Foot from "./foot";
+import Loading from "./loading";
 
 
 
 
+// const Model = lazy(() => import('./goldBar3dScene'));
 
 
 
@@ -46,11 +48,14 @@ export default function Home(){
     return(<>
     <Navbar/>
     <WcText/>
+    {/* <Suspense fallback={<Loading/>}> */}
     <Model/>
-    <AboutUs/>
+    {/* </Suspense> */}
     <WorkIntro/>
     <ShowCase/>
     <Work/>
+    <AboutUs/>
     <Foot/>
+
     </>)
 }

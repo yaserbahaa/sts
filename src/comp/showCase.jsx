@@ -64,7 +64,7 @@ ScrollTrigger.create({
 
 
 return(<>
-        <div  ref={boxRef3} className="slider-parent">
+        <div  ref={boxRef3} className="slider-parent2">
   <h1 className="slider-txt2">SHOWCASE <span className="slider-divider-dot2"></span></h1>
   <h1 className="slider-txt2">SHOWCASE <span className="slider-divider-dot2"></span></h1>
   <h1 className="slider-txt2">SHOWCASE <span className="slider-divider-dot2"></span></h1>
@@ -77,8 +77,9 @@ return(<>
   <h1 className="slider-txt2">SHOWCASE <span className="slider-divider-dot2"></span></h1>
 </div>
     <div ref={boxRef} className="contant-1-Parent">
-    <video ref={videoRef} style={{width:"64%"}} src={chartGraph} autoPlay muted playsInline />
-        {/* <p className="contant-1-txt">chart/graph showing earnings over a 2.5mon period.</p> */}
+    <video ref={videoRef} style={{width:"64%",height: "764px"}} src={chartGraph} autoPlay muted playsInline />
+        <p className="contant-1-txt">earnings over a 2.5mon period.</p>
+        <span className="fillgap-aboutus"></span>
     </div>
     </>)
 }
